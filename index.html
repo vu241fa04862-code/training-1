@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PulseFit - Next-Gen Athletic Performance & Biometrics Bento Grid Dashboard built with pure HTML and CSS Grid.">
+  <meta name="keywords" content="bento grid, css grid, responsive design, fitness dashboard, athletic performance, biometrics">
+  <meta name="author" content="PulseFit Labs">
+  
+  <title>PulseFit // Pro Athletic & Biometrics Bento Grid</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans for modern, premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">PulseFit</span>
+        <span class="brand-badge">BIO-OS</span>
+      </div>
+    </div>
+    <div class="header-status">
+      <span class="status-indicator"></span>
+      <span class="status-text">Biometric Engine Live</span>
+    </div>
+  </header>
+
+  <!-- Main Bento Grid Container -->
+  <main class="main-wrapper">
+    <section class="bento-grid" aria-label="PulseFit Athletic Performance Bento Grid">
+
+      <!-- CARD 1: Split Routine Generator (Desktop: Col 1, Row 1 | Mobile: #7) -->
+      <article class="bento-card card-routine" id="card-routine">
+        <div class="card-content">
+          <h2 class="card-title">
+            Generate custom training splits <em>quicker.</em>
+          </h2>
+          <div class="cta-wrapper">
+            <button class="routine-btn" type="button" aria-label="Generate Routine">
+              <span>Create Routine</span>
+              <svg class="sparkle-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+              </svg>
+            </button>
+            <div class="cursor-pointer" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="#1e1b4b">
+                <path d="M3 2l6.9 19.3 3.6-7.8 7.8-3.6L3 2z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2: Hero Card (Desktop: Col 2-3, Row 1 | Mobile: #1) -->
+      <article class="bento-card card-hero" id="card-hero">
+        <div class="card-content">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+            <span>NEXT-GEN BIO-INTELLIGENCE</span>
+          </div>
+
+          <h1 class="hero-title">
+            Crush Your PRs <span class="highlight-text">10x</span> <em>Faster</em> with Bio-AI
+          </h1>
+
+          <div class="hero-reviews">
+            <div class="stars-group" aria-label="5 out of 5 stars">
+              <svg class="star-icon" viewBox="0 0 24 24" width="22" height="22" fill="#facc15">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              <svg class="star-icon" viewBox="0 0 24 24" width="22" height="22" fill="#facc15">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              <svg class="star-icon" viewBox="0 0 24 24" width="22" height="22" fill="#facc15">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              <svg class="star-icon" viewBox="0 0 24 24" width="22" height="22" fill="#facc15">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              <svg class="star-icon" viewBox="0 0 24 24" width="22" height="22" fill="#facc15">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <p class="reviews-caption">Over 14,000+ 5-star athlete reviews</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3: Optimal Training Window (Desktop: Col 4, Row 1-2 tall | Mobile: #4) -->
+      <article class="bento-card card-timing" id="card-timing">
+        <div class="card-content">
+          <h2 class="card-title">
+            Optimize workout timing for peak output.
+          </h2>
+
+          <div class="timing-widget">
+            <div class="widget-header">
+              <span class="widget-label">Optimal Circadian Window</span>
+            </div>
+
+            <!-- Day Selector Pills -->
+            <div class="day-pills">
+              <span class="pill active">Mon</span>
+              <span class="pill">Tue</span>
+              <span class="pill">Wed</span>
+              <span class="pill">Thu</span>
+              <span class="pill">Fri</span>
+              <span class="pill">Sat</span>
+              <span class="pill">Sun</span>
+            </div>
+
+            <!-- Peak Status Badge -->
+            <div class="peak-badge">
+              <span class="pulse-dot"></span>
+              <span>Peak Anabolic Zone</span>
+            </div>
+
+            <!-- Circadian Energy Bar Chart -->
+            <div class="chart-container" aria-label="Energy output by time of day">
+              <div class="chart-bars">
+                <div class="bar-col">
+                  <div class="bar-fill" style="--bar-height: 48%;"></div>
+                  <span class="bar-label">6a</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar-fill" style="--bar-height: 64%;"></div>
+                  <span class="bar-label">9a</span>
+                </div>
+                <div class="bar-col peak">
+                  <div class="bar-fill" style="--bar-height: 96%;"></div>
+                  <span class="bar-label">12p</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar-fill" style="--bar-height: 78%;"></div>
+                  <span class="bar-label">3p</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar-fill" style="--bar-height: 58%;"></div>
+                  <span class="bar-label">6p</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar-fill" style="--bar-height: 84%;"></div>
+                  <span class="bar-label">9p</span>
+                </div>
+                <div class="bar-col">
+                  <div class="bar-fill" style="--bar-height: 52%;"></div>
+                  <span class="bar-label">12a</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="timing-footer">
+            Sync compound lifts with natural testosterone and core temperature peaks for optimal neuromuscular recruitment.
+          </p>
+        </div>
+      </article>
+
+      <!-- CARD 4: AI Athletic Coach Chat (Desktop: Col 1, Row 2-3 tall | Mobile: #8) -->
+      <article class="bento-card card-coach" id="card-coach">
+        <div class="card-content">
+          <h2 class="card-title">
+            Program your workouts using AI Coach.
+          </h2>
+
+          <div class="chat-mockup">
+            <!-- User Bubble -->
+            <div class="chat-bubble user-bubble">
+              <p>Give me 4 protocols to break my squat plateau safely</p>
+              <div class="bubble-avatar user-avatar" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- AI Coach Bubble -->
+            <div class="chat-bubble ai-bubble">
+              <div class="bubble-avatar ai-avatar" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                </svg>
+              </div>
+              <p>
+                Prioritize pause reps at bottom parallel, increase posterior chain volume with RDLs, and hit 2g protein/kg bodyweight daily!
+              </p>
+            </div>
+
+            <!-- Send Action Widget -->
+            <div class="chat-input-bar">
+              <span class="chat-placeholder">Ask Bio-Coach anything...</span>
+              <button class="send-btn" type="button" aria-label="Send message">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="19" x2="12" y2="5"></line>
+                  <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 5: Multi-Sensor & Wearables Sync (Desktop: Col 2, Row 2 | Mobile: #2) -->
+      <article class="bento-card card-wearables" id="card-wearables">
+        <div class="card-content">
+          <div class="wearables-pills">
+            <div class="device-pill">
+              <div class="device-icon icon-apple">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 1.01-2.87-.96.04-2.12.64-2.8 1.44-.59.69-1.12 1.76-1 2.81 1.07.08 2.18-.57 2.79-1.38z"/>
+                </svg>
+              </div>
+              <div class="device-info">
+                <span class="device-name">Apple Watch Ultra</span>
+                <span class="device-stat">HR 142 bpm • Synced</span>
+              </div>
+            </div>
+
+            <div class="device-pill">
+              <div class="device-icon icon-whoop">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <div class="device-info">
+                <span class="device-name">Whoop 4.0</span>
+                <span class="device-stat">Strain 17.8 • Optimal</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="card-title">
+            Sync multiple wearables and biometric rings.
+          </h2>
+        </div>
+      </article>
+
+      <!-- CARD 6: Workout Consistency & Streak (Desktop: Col 3, Row 2 | Mobile: #3) -->
+      <article class="bento-card card-streak" id="card-streak">
+        <div class="card-content">
+          <h2 class="card-title">
+            Maintain a consistent training schedule.
+          </h2>
+
+          <div class="streak-widget">
+            <div class="streak-header">
+              <span class="streak-month">September 2026</span>
+              <span class="streak-week">Week 4</span>
+            </div>
+
+            <!-- Calendar Row with Checks -->
+            <div class="streak-calendar-row">
+              <div class="day-check checked">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="day-check checked">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="day-check checked">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="day-check checked">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Schedule Empty Cells -->
+            <div class="streak-grid-faded">
+              <div class="faded-cell"></div>
+              <div class="faded-cell"></div>
+              <div class="faded-cell"></div>
+              <div class="faded-cell"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 7: Recovery Rate Percentage Stat (Desktop: Col 2, Row 3 | Mobile: #6) -->
+      <article class="bento-card card-recovery" id="card-recovery">
+        <div class="card-content">
+          <div class="metric-huge">>84%</div>
+          <p class="metric-desc">faster central nervous system recovery</p>
+
+          <div class="avatars-row">
+            <div class="avatar-badge av1" title="Coach Marcus">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#4f46e5">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+              </svg>
+            </div>
+            <div class="avatar-badge av2" title="Elena Frost, Olympian">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#d97706">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+              </svg>
+            </div>
+            <div class="avatar-badge av3" title="Dr. David Thorne">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#059669">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 8: Progressive Overload & PRs (Desktop: Col 3-4, Row 3 wide | Mobile: #5) -->
+      <article class="bento-card card-overload" id="card-overload">
+        <div class="card-content">
+          <div class="overload-data-card">
+            <div class="data-header">
+              <span class="data-title">Training Volume Velocity</span>
+              <div class="metric-group">
+                <span class="data-number">128,450 kg</span>
+                <span class="gain-badge">+490%</span>
+              </div>
+            </div>
+
+            <!-- Mini Sparkline Bars -->
+            <div class="mini-bars">
+              <div class="mini-bar" style="--h: 40%"></div>
+              <div class="mini-bar" style="--h: 55%"></div>
+              <div class="mini-bar" style="--h: 65%"></div>
+              <div class="mini-bar" style="--h: 80%"></div>
+              <div class="mini-bar" style="--h: 100%"></div>
+            </div>
+
+            <!-- Secondary Floating Metric Pill -->
+            <div class="sub-metric-pill">
+              <div class="pill-arrow-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="19" x2="12" y2="5"></line>
+                  <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+              </div>
+              <div class="sub-metric-text">
+                <span class="sub-label">Clean PR</span>
+                <span class="sub-val">340 kg</span>
+              </div>
+              <span class="sub-gain">+120%</span>
+            </div>
+          </div>
+
+          <h2 class="card-title">
+            Shatter PRs with non-stop progressive overload.
+          </h2>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Clean Minimal Footer -->
+  <footer class="site-footer">
+    <p>Crafted with pure HTML & CSS Grid. PulseFit Performance Lab © 2026</p>
+  </footer>
+</body>
+</html>
